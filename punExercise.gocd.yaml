@@ -1,0 +1,17 @@
+format_version: 2
+pipelines:
+  buildApp:
+    group: san-group-name
+    materials:
+      git-repo:
+        git: https://github.com/sanmcdaniel/vue-gotham-todo.git
+        branch: master
+    stages:
+      - yarnInstall:
+          jobs:
+            list:
+              tasks:
+                - exec:
+                    command: npm
+                    arguments:
+                      - install
