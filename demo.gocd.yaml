@@ -1,13 +1,13 @@
 format_version: 2
 pipelines:
-  pipeline-name: sand-test
+  sand-test:
     group: san-group-name
     materials:
       git-repo:
         git: https://github.com/sanmcdaniel/vue-gotham-todo.git
         branch: master
     stages:
-      - first-stage:
+      - runLsAl:
           jobs:
             list:
               tasks:
