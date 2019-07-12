@@ -12,6 +12,6 @@ pipelines:
             list:
               tasks:
                 - exec:
-                    command: ls -al
+                    command: ls
                     arguments:
-                      - .
+                      - al
