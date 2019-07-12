@@ -15,3 +15,11 @@ pipelines:
                       command: ./gotham-todo/build.sh
                       arguments:
                         - .
+                - exec:
+                    command: ./gotham-todo/apply-infrastructure.sh
+                    arguments:
+                      - .
+                - exec:
+                    command: ./gotham-todo/copy-static-files.sh
+                    arguments:
+                      - .
