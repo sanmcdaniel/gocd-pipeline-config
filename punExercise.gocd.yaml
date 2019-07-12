@@ -12,6 +12,6 @@ pipelines:
             list:
               tasks:
                 - exec:
-                      command: npm
+                      command: ./gotham-todo/build.sh
                       arguments:
-                        - install ./gotham-todo
+                        - .
